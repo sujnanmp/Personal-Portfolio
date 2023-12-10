@@ -118,6 +118,7 @@
                       <div class="col-md-6">
                           <ul>
                               <li>Name: Sujnan MP</li>
+                              <div id="ageDisplay">Age: <span id="userAge">19</span></div>
                               <li>Age: 19</li>
                               <li>Qualification: Student</li>
 
@@ -269,6 +270,24 @@
       crossorigin="anonymous"
     ></script>
     <script src="function.js"></script>
+    <script>
+  // Initialize the user's age
+  let userAge = 19;
+
+  // Function to update the age on the webpage
+  function updateAge() {
+    document.getElementById('userAge').innerText = userAge;
+  }
+
+  // Function to increment the age
+  function incrementAge() {
+    userAge++;
+    updateAge();
+  }
+
+  // Call the updateAge function to display the initial age
+  updateAge();
+</script>
   </body>
   
 </html>
